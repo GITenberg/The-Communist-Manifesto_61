@@ -1,0 +1,39 @@
+_repo: The-Communist-Manifesto_61
+_version: 0.0.1
+alternative_title: Manifest der Kommunistischen Partei. English
+creator:
+  authors:
+  - agent_name: Marx, Karl
+    alias: Marx, Heinrich Karl
+    birthdate: 1818
+    deathdate: 1883
+    gutenberg_agent_id: '46'
+    url: http://www.gutenberg.org/2009/agents/46
+    wikipedia: http://en.wikipedia.org/wiki/Karl_Marx
+  - agent_name: Engels, Friedrich
+    alias: Engels, Frederick
+    birthdate: 1820
+    deathdate: 1895
+    gutenberg_agent_id: '47'
+    url: http://www.gutenberg.org/2009/agents/47
+    wikipedia: http://en.wikipedia.org/wiki/Friedrich_Engels
+description: 'Translation of: Manifest der Kommunistischen Partei'
+gutenberg_bookshelf:
+- Politics
+- Philosophy
+- Banned Books from Anne Haight's list
+gutenberg_issued: '2005-01-25'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '61'
+language: en
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- !lcsh 'Communism'
+- !lcsh 'Socialism'
+- !lcc 'HX'
+- GITenberg
+title: The Communist Manifesto
+url: http://www.gutenberg.org/ebooks/61
