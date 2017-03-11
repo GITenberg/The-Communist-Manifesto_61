@@ -3,14 +3,9 @@ dist: trusty
 language: ruby
 
 before_install:
-before_install:
 - gem install asciidoctor -v 1.5.2
 - gem install tilt
 - sudo pip install git+https://github.com/gitenberg-dev/gitberg
-- sudo pip install pillow
-- sudo pip install cssutils
-- sudo pip install docutils
-- sudo pip install roman
 - sudo pip install git+https://github.com/gitenberg-dev/pg-epubmaker
 script:
 - VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
@@ -20,9 +15,6 @@ script:
 - /usr/bin/python -c "from gitenberg import travis; travis.build_epub()"
 - ebook-convert book.epub book.mobi
 - xvfb-run ebook-convert book.epub book.pdf
-branches:
-  only:
-  - master
 notifications:
   webhooks:
     urls:
@@ -39,8 +31,9 @@ deploy:
     - book.epub
     - book.mobi
     - book.pdf
-  "on":
+  on:
     repo: GITenberg/The-Communist-Manifesto_61
+    tags: true
 addons:
   apt:
     packages:
